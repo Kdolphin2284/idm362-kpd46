@@ -23,13 +23,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igz-Ro-Jt5">
-                                <rect key="frame" x="136" y="637" width="93" height="35"/>
+                                <rect key="frame" x="136" y="637" width="93.333333333333314" height="35"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="View List"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tpl-1L-5qB">
-                                <rect key="frame" x="237" y="644" width="20" height="21"/>
+                                <rect key="frame" x="237.33333333333334" y="644" width="19.666666666666657" height="21"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="top" text="add something" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLk-cU-d1i">

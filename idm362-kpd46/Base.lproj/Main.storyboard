@@ -16,27 +16,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hO-b6-UCC">
-                                <rect key="frame" x="83" y="399" width="226" height="55"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="790-gx-1Q8">
+                                <rect key="frame" x="30" y="89" width="84" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spJ-40-AJx">
+                                <rect key="frame" x="150" y="549.66666666666663" width="92" height="34.333333333333371"/>
+                                <color key="tintColor" red="0.92038089712870486" green="0.17121441434091861" blue="0.1634104742360358" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <color key="baseForegroundColor" red="0.92941170930000006" green="0.92941176889999999" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.92038089710000004" green="0.0" blue="0.1009649354" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldl-YV-KLJ">
+                                <rect key="frame" x="30" y="236" width="333" height="280"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="add something" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLk-cU-d1i">
+                                        <rect key="frame" x="26" y="24" width="280" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92785746780867429" green="0.92785746780867429" blue="0.92785746780867429" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92941170930000006" green="0.92941176889999999" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-VJ-rej">
+                                <rect key="frame" x="133" y="643" width="126" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igz-Ro-Jt5">
+                                        <rect key="frame" x="8" y="3" width="93.333333333333329" height="35"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="View List"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tpl-1L-5qB">
+                                        <rect key="frame" x="100" y="12.999999999999998" width="19.666666666666671" height="14.666666666666666"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="tpl-1L-5qB" firstAttribute="leading" secondItem="L0m-VJ-rej" secondAttribute="leading" constant="100" id="5wi-zH-bVK"/>
+                                    <constraint firstAttribute="trailing" secondItem="igz-Ro-Jt5" secondAttribute="trailing" constant="24.670000000000002" id="BSO-6f-ImL"/>
+                                    <constraint firstAttribute="trailing" secondItem="tpl-1L-5qB" secondAttribute="trailing" constant="6.3300000000000001" id="Kbo-uG-ZJY"/>
+                                    <constraint firstItem="tpl-1L-5qB" firstAttribute="top" secondItem="L0m-VJ-rej" secondAttribute="top" constant="10" id="UsG-Fa-Cbl"/>
+                                    <constraint firstItem="igz-Ro-Jt5" firstAttribute="top" secondItem="L0m-VJ-rej" secondAttribute="top" constant="3" id="WdA-uJ-rt6"/>
+                                    <constraint firstAttribute="bottom" secondItem="tpl-1L-5qB" secondAttribute="bottom" constant="10.67" id="cro-Z0-dlR"/>
+                                    <constraint firstAttribute="bottom" secondItem="igz-Ro-Jt5" secondAttribute="bottom" constant="3" id="nmi-cH-L62"/>
+                                    <constraint firstItem="igz-Ro-Jt5" firstAttribute="leading" secondItem="L0m-VJ-rej" secondAttribute="leading" constant="8" id="zo7-82-nDC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6hO-b6-UCC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFH-7m-8KQ"/>
-                            <constraint firstItem="6hO-b6-UCC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rgv-ZV-Osa"/>
+                            <constraint firstItem="L0m-VJ-rej" firstAttribute="top" secondItem="spJ-40-AJx" secondAttribute="bottom" constant="59" id="2xy-b7-GbT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ldl-YV-KLJ" secondAttribute="trailing" constant="30" id="3I9-IL-rWj"/>
+                            <constraint firstItem="spJ-40-AJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="8Td-Ob-3aO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="790-gx-1Q8" secondAttribute="trailing" constant="279" id="Dsn-Yl-jrT"/>
+                            <constraint firstItem="ldl-YV-KLJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="G0O-UX-Wim"/>
+                            <constraint firstItem="790-gx-1Q8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="KhA-nP-dal"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L0m-VJ-rej" secondAttribute="bottom" constant="134" id="O2D-fT-6WF"/>
+                            <constraint firstItem="ldl-YV-KLJ" firstAttribute="top" secondItem="790-gx-1Q8" secondAttribute="bottom" constant="99" id="Pp8-hM-qMN"/>
+                            <constraint firstItem="790-gx-1Q8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="SPJ-6D-A0I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L0m-VJ-rej" secondAttribute="trailing" constant="134" id="VGd-Dc-Ne5"/>
+                            <constraint firstItem="spJ-40-AJx" firstAttribute="top" secondItem="ldl-YV-KLJ" secondAttribute="bottom" constant="33.670000000000002" id="dXp-Vz-K9a"/>
+                            <constraint firstItem="L0m-VJ-rej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="mWJ-UE-fCR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="spJ-40-AJx" secondAttribute="trailing" constant="151" id="zGq-Zd-ns5"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="-2"/>
+            <point key="canvasLocation" x="116.79389312977099" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

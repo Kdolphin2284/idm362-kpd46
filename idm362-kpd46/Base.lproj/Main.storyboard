@@ -3,6 +3,7 @@
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -122,7 +123,15 @@
                             <constraint firstItem="L0m-VJ-rej" firstAttribute="top" secondItem="spJ-40-AJx" secondAttribute="bottom" constant="40" id="t5g-aj-y6F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="X1n-NU-IfM"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="X1n-NU-IfM">
+                        <imageReference key="image" image="house.fill" catalog="system" renderingMode="hierarchical">
+                            <hierarchicalColors>
+                                <color red="0.92732745409999995" green="0.4399365187" blue="0.41959840059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color red="0.92732745409999995" green="0.4399365187" blue="0.41959840059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,7 +201,16 @@
                             <constraint firstItem="J3Z-xb-Vqo" firstAttribute="trailing" secondItem="ahf-ko-hGN" secondAttribute="trailing" constant="194" id="xHs-nV-pKG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="List" image="list.bullet.rectangle.fill" catalog="system" id="dVy-Re-U8F"/>
+                    <tabBarItem key="tabBarItem" title="List" id="dVy-Re-U8F">
+                        <imageReference key="image" image="list.bullet.rectangle.fill" catalog="system" renderingMode="hierarchical" variableValue="0.0">
+                            <hierarchicalColors>
+                                <color red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color red="0.92732745409999995" green="0.4399365187" blue="0.41959840059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color red="0.92732745409999995" green="0.4399365187" blue="0.41959840059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                        <color key="badgeColor" red="0.92732745409999995" green="0.4399365187" blue="0.41959840059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCM-Cl-G32" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

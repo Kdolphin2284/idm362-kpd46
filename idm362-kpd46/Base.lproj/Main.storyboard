@@ -108,7 +108,7 @@
                         <constraints>
                             <constraint firstItem="spJ-40-AJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="ByO-5r-YnK"/>
                             <constraint firstItem="ldl-YV-KLJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="C5e-uQ-93v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L0m-VJ-rej" secondAttribute="bottom" constant="20" id="O2D-fT-6WF"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L0m-VJ-rej" secondAttribute="bottom" constant="20" id="O2D-fT-6WF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L0m-VJ-rej" secondAttribute="trailing" constant="93.5" id="Sg7-1P-w8K"/>
                             <constraint firstItem="790-gx-1Q8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="X0C-oa-VhR"/>
                             <constraint firstAttribute="bottom" secondItem="ldl-YV-KLJ" secondAttribute="bottom" constant="216.5" id="g5M-Sc-eC9"/>

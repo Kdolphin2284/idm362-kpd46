@@ -44,8 +44,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldl-YV-KLJ">
                                 <rect key="frame" x="30" y="138" width="259" height="213.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="add something" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLk-cU-d1i">
-                                        <rect key="frame" x="26" y="22" width="207" height="169.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="top" placeholder="add something" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLk-cU-d1i">
+                                        <rect key="frame" x="26" y="22" width="120" height="169.5"/>
                                         <color key="backgroundColor" red="0.92785746780867429" green="0.92785746780867429" blue="0.92785746780867429" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -55,7 +55,7 @@
                                 <color key="backgroundColor" red="0.92941170930000006" green="0.92941176889999999" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="JLk-cU-d1i" secondAttribute="bottom" constant="22" id="4Eu-ds-mV4"/>
-                                    <constraint firstAttribute="trailing" secondItem="JLk-cU-d1i" secondAttribute="trailing" constant="26" id="E1Y-Ha-UsG"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JLk-cU-d1i" secondAttribute="trailing" symbolic="YES" id="E1Y-Ha-UsG"/>
                                     <constraint firstItem="JLk-cU-d1i" firstAttribute="top" secondItem="ldl-YV-KLJ" secondAttribute="top" constant="22" id="H6F-4p-BDu"/>
                                     <constraint firstItem="JLk-cU-d1i" firstAttribute="leading" secondItem="ldl-YV-KLJ" secondAttribute="leading" constant="26" id="r1i-ql-s0y"/>
                                 </constraints>

@@ -21,5 +21,9 @@ class ViewController: UIViewController {
     @IBAction func testViewListButtonPrint(_ sender: Any) {
         print("test print hehe")
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
 }
 

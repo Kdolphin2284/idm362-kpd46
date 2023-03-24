@@ -7,9 +7,9 @@
 
 import UIKit
 // jwt.. Add Audio Video library
-import AVFoundation
-
-var myAudioPlayerObj = AVAudioPlayer()
+//import AVFoundation
+//
+//var myAudioPlayerObj = AVAudioPlayer()
 
 class ViewControllerSettings: UIViewController {
 
@@ -18,27 +18,27 @@ class ViewControllerSettings: UIViewController {
 
     // Do any additional setup after loading the view.
     
-    // Setup sound obj
-    let mySound = Bundle.main.path(forResource: "sounds/halo1", ofType: "mp3")
-    
-    do {
-      myAudioPlayerObj = try
-      AVAudioPlayer(contentsOf: URL(fileURLWithPath: mySound!))
-      myAudioPlayerObj.prepareToPlay()
-      print("Sound file loaded and prepped!")
-    } catch {
-      print(error)
-    }
+//     Setup sound obj
+//    let mySound = Bundle.main.path(forResource: "sounds/halo1", ofType: "mp3")
+//
+//    do {
+//      myAudioPlayerObj = try
+//      AVAudioPlayer(contentsOf: URL(fileURLWithPath: mySound!))
+//      myAudioPlayerObj.prepareToPlay()
+//      print("Sound file loaded and prepped!")
+//    } catch {
+//      print(error)
+//    }
   }
 
-  @IBAction func toggleHalo(_ sender: Any) {
-    print("toggleHalo called")
-    if (myAudioPlayerObj.isPlaying) {
-      myAudioPlayerObj.stop()
-    } else {
-      myAudioPlayerObj.play()
-    }
-  }
+//  @IBAction func toggleHalo(_ sender: Any) {
+//    print("toggleHalo called")
+//    if (myAudioPlayerObj.isPlaying) {
+//      myAudioPlayerObj.stop()
+//    } else {
+//      myAudioPlayerObj.play()
+//    }
+//  }
   
   @IBAction func showAlert(_ sender: Any) {
     let myAlertObj = UIAlertController(title: "Delete ALL Records", message: "Are you Sure!", preferredStyle: .alert)

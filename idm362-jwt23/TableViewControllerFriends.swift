@@ -9,6 +9,10 @@ import UIKit
 // COREDATA 1
 import CoreData
 
+import AVFoundation
+
+var myAudioPlayerObj = AVAudioPlayer()
+
 class TableViewControllerFriends: UITableViewController {
   
   // Global Vars
@@ -20,6 +24,17 @@ class TableViewControllerFriends: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Setup sound obj
+        let mySound = Bundle.main.path(forResource: "sounds/buttonClick", ofType: "mp3")
+        
+        do {
+          myAudioPlayerObj = try
+          AVAudioPlayer(contentsOf: URL(fileURLWithPath: mySound!))
+          myAudioPlayerObj.prepareToPlay()
+          print("Sound file loaded and prepped!")
+        } catch {
+          print(error)
+        }
       // Uncomment the following line to preserve selection between presentations
       // self.clearsSelectionOnViewWillAppear = false
 
@@ -159,6 +174,12 @@ class TableViewControllerFriends: UITableViewController {
   
   // jwt STEP TWO
   @IBAction func addName(_ sender: Any) {
+      print("buttonClick called")
+      if (myAudioPlayerObj.isPlaying) {
+        myAudioPlayerObj.stop()
+      } else {
+        myAudioPlayerObj.play()
+      }
     let alertObj = UIAlertController(title: "New List Item", message: "Add a new list item", preferredStyle: .alert)
     //
     alertObj.view.tintColor = UIColor.init(named: "AccentColor")

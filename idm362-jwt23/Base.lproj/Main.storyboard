@@ -21,8 +21,8 @@
                         <color key="tintColor" red="0.92038089710000004" green="0.3663354821" blue="0.37901587510000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1OQ-Wm-OTX"/>
                         <segue destination="xw0-Vf-XMr" kind="relationship" relationship="viewControllers" id="G1j-kV-zxa"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="wp5-LZ-QbK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ph1-hU-1TK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -127,7 +127,7 @@
                 <navigationController id="xw0-Vf-XMr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" image="pencil" catalog="system" id="u0o-Ju-mhy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wFA-a3-BXq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -138,7 +138,7 @@
             </objects>
             <point key="canvasLocation" x="-886" y="-630"/>
         </scene>
-        <!--Home-->
+        <!--Help-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="idm362_jwt23" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,37 +152,99 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="add something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QuS-fS-MQa">
-                                <rect key="frame" x="30" y="267" width="260" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4B-3O-VsX">
-                                <rect key="frame" x="121" y="331" width="78" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Submit">
-                                    <color key="baseBackgroundColor" name="AccentColor"/>
-                                </buttonConfiguration>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use Lists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYx-UN-cek">
+                                <rect key="frame" x="30" y="131" width="141" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the + to add an item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug9-d8-k2d">
+                                <rect key="frame" x="40" y="172" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click a list item to open it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyN-Gh-mRk">
+                                <rect key="frame" x="40" y="211" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to delete an item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhW-Mx-7N2">
+                                <rect key="frame" x="40" y="250" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why use Lists?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv4-V0-xsp">
+                                <rect key="frame" x="30" y="322" width="128.5" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People are 42% more likely to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRF-Hb-bsS">
+                                <rect key="frame" x="40" y="363" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="finish a task if it is written down." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-3k-zT5">
+                                <rect key="frame" x="40" y="384" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Having tasks organized can help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPo-Gw-c65">
+                                <rect key="frame" x="40" y="423" width="246" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="with anxiety and stress." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euo-WM-9Hm">
+                                <rect key="frame" x="40" y="444" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t4B-3O-VsX" secondAttribute="trailing" constant="121" id="5Dd-yQ-472"/>
-                            <constraint firstItem="t4B-3O-VsX" firstAttribute="top" secondItem="QuS-fS-MQa" secondAttribute="bottom" constant="30" id="HpK-eb-wwG"/>
+                            <constraint firstItem="pPo-Gw-c65" firstAttribute="top" secondItem="T6e-3k-zT5" secondAttribute="bottom" constant="18" id="1vO-iR-Z6C"/>
+                            <constraint firstItem="euo-WM-9Hm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="4lG-JZ-OqT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OYx-UN-cek" secondAttribute="trailing" constant="96" id="973-4D-N6k"/>
+                            <constraint firstItem="OYx-UN-cek" firstAttribute="top" secondItem="O3c-73-Rl8" secondAttribute="top" constant="101" id="AjH-wu-iAQ"/>
+                            <constraint firstItem="jhW-Mx-7N2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="GyM-MZ-yqm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="euo-WM-9Hm" secondAttribute="bottom" constant="54" id="HCB-Im-Bql"/>
                             <constraint firstItem="O3c-73-Rl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="INU-Jb-cev"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QuS-fS-MQa" secondAttribute="trailing" constant="30" id="LuC-F5-AS2"/>
+                            <constraint firstItem="PyN-Gh-mRk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="KUA-ug-kE2"/>
+                            <constraint firstItem="zRF-Hb-bsS" firstAttribute="top" secondItem="iv4-V0-xsp" secondAttribute="bottom" constant="19" id="KdI-ro-MWO"/>
+                            <constraint firstItem="jhW-Mx-7N2" firstAttribute="top" secondItem="PyN-Gh-mRk" secondAttribute="bottom" constant="18" id="KpX-AO-eYw"/>
+                            <constraint firstItem="OYx-UN-cek" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="QG0-sI-Rp4"/>
+                            <constraint firstItem="T6e-3k-zT5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="USn-Ft-gfY"/>
+                            <constraint firstItem="euo-WM-9Hm" firstAttribute="top" secondItem="pPo-Gw-c65" secondAttribute="bottom" id="VJA-Kz-Acm"/>
+                            <constraint firstItem="Ug9-d8-k2d" firstAttribute="top" secondItem="OYx-UN-cek" secondAttribute="bottom" constant="19.5" id="YRD-Ga-PtY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="O3c-73-Rl8" secondAttribute="bottom" constant="451" id="abs-la-NpS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ug9-d8-k2d" secondAttribute="trailing" constant="79" id="c77-qM-Fj3"/>
+                            <constraint firstItem="pPo-Gw-c65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="cz7-9h-upC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PyN-Gh-mRk" secondAttribute="trailing" constant="89" id="daj-nF-sSw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="O3c-73-Rl8" secondAttribute="trailing" constant="204" id="e9s-8X-0qe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="t4B-3O-VsX" secondAttribute="bottom" constant="153" id="i44-4J-zpg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="QuS-fS-MQa" secondAttribute="centerY" constant="-24.5" id="ibC-6N-xlU"/>
-                            <constraint firstItem="QuS-fS-MQa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="lyP-J8-4Mj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="t4B-3O-VsX" secondAttribute="centerY" constant="-89" id="ph0-ex-x0c"/>
-                            <constraint firstItem="t4B-3O-VsX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="uJt-aM-bx2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="euo-WM-9Hm" secondAttribute="trailing" constant="101" id="hf3-kb-PUp"/>
+                            <constraint firstItem="T6e-3k-zT5" firstAttribute="top" secondItem="zRF-Hb-bsS" secondAttribute="bottom" id="j8n-6F-X4s"/>
+                            <constraint firstItem="PyN-Gh-mRk" firstAttribute="top" secondItem="Ug9-d8-k2d" secondAttribute="bottom" constant="18" id="kNa-0a-dPe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jhW-Mx-7N2" secondAttribute="trailing" constant="73" id="n1x-Pt-hYL"/>
+                            <constraint firstItem="iv4-V0-xsp" firstAttribute="top" secondItem="jhW-Mx-7N2" secondAttribute="bottom" constant="51" id="nSj-77-jS0"/>
+                            <constraint firstItem="Ug9-d8-k2d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="q4m-tV-ACo"/>
+                            <constraint firstItem="zRF-Hb-bsS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="r6f-iR-Tkq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iv4-V0-xsp" secondAttribute="trailing" constant="149" id="s1w-Vb-Pyc"/>
+                            <constraint firstItem="iv4-V0-xsp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="sl4-Bf-4KS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T6e-3k-zT5" secondAttribute="trailing" constant="37" id="t37-vv-iHD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pPo-Gw-c65" secondAttribute="trailing" constant="34" id="uA4-lW-nA4"/>
                             <constraint firstItem="O3c-73-Rl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="vpW-aT-gWA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zRF-Hb-bsS" secondAttribute="trailing" constant="54" id="yJA-OP-2A8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="F9c-EJ-cHY"/>
+                    <tabBarItem key="tabBarItem" title="Help" image="questionmark.app" catalog="system" id="F9c-EJ-cHY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,8 +252,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="house" catalog="system" width="128" height="104"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="questionmark.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
